@@ -9,3 +9,40 @@ something that could just do everything at once.
 Being a rust program you'll need rust installed and then to build it. I chose rust so I could
 make executables and in the future ill likely make a release as an appimage, macOS program, and
 windows program but ill wait to see if anyone else uses it first.
+
+Dependencies
+Linux (Debian/Ubuntu)
+
+Run the following command to install the required development libraries for egui and rfd:
+Bash
+```
+sudo apt update
+sudo apt install libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxkbcommon-dev libssl-dev libgtk-3-dev
+```
+
+Windows
+
+Install Visual Studio Build Tools (2019 or newer).
+
+Select the "Desktop development with C++" workload.
+
+Ensure the Windows SDK is included.
+
+macOS
+
+Install the Xcode Command Line Tools:
+Bash
+
+xcode-select --install
+
+External Tools
+
+The program requires FFmpeg and FFprobe to be installed and available in your system's PATH.
+
+Future goals
+1. Support more codecs for video, audio, and subtitles
+
+2. GPU acceleration (very platform dependent so long term goal)
+
+3. Support OCR and tesseract for subtitle extraction, conversion, and insertion all
+without adding additional steps from the user. AKA if its an image based subtitle codec like PGSSUB convert and insert in the background.
