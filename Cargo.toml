@@ -1,0 +1,15 @@
+[package]
+name = "multi_media_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27.2"
+rfd = "0.14"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+
+# Optional: if you need to load images (jpg/png) in your UI
+egui_extras = { version = "0.27.2", features = ["all_loaders"] }
+image = { version = "0.25", features = ["jpeg", "png"] }
