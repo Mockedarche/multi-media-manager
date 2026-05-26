@@ -47,6 +47,8 @@ Future goals
 3. Support OCR and tesseract for subtitle extraction, conversion, and insertion all
 without adding additional steps from the user. AKA if its an image based subtitle codec like PGSSUB convert and insert in the background.
 
+4. Add bitrate and more verbose codec information for added files.
+
 Currently working on
 
 3 supporting OCR and tesseract AKA supporting image based subtitles
